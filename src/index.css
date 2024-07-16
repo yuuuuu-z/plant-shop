@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --fontsize-large: 40px;
+  --fontsize-medium: 30px;
+  --fontsize-small: 20px;
+  --box-shadow: 0 0 10px 10px lightgray;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+}
+.navbar > img {
+  width: 70px;
+}
+.nav-details,
+a {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  text-decoration: none;
+  color: gray;
+  font-size: var(--fontsize-small);
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+a:hover {
+  color: black;
+}
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.nav-btn > button {
+  box-shadow: var(--box-shadow);
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.main > img {
+  width: 500px;
+}
+.main-btn {
+  display: flex;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+.main-btn > button {
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar,
+  .main {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 390px) {
+  .navbar,
+  .main {
+    flex-wrap: wrap;
+  }
+  .main {
+    margin: 2rem;
+  }
+  .main > img {
+    width: 300px;
+  }
+}
