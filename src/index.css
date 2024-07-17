@@ -5,6 +5,7 @@
   --fontsize-medium: 30px;
   --fontsize-small: 20px;
   --box-shadow: 0 0 10px 10px lightgray;
+  --main-color: rgb(109, 196, 109);
 }
 
 *,
@@ -38,6 +39,7 @@ a {
   font-weight: bold;
   padding-top: 0.5rem;
 }
+
 a:hover {
   color: black;
 }
@@ -51,10 +53,17 @@ a:hover {
 .nav-btn > button {
   box-shadow: var(--box-shadow);
 }
+.menu-icon {
+  display: none;
+}
 .main {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
+}
+.main-details > p:first-child {
+  font-size: 50px;
+  color: var(--main-color);
 }
 .main > img {
   width: 500px;
@@ -72,17 +81,43 @@ a:hover {
   .navbar,
   .main {
     flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .main > img {
+    width: 300px;
+    margin: 2rem 1rem;
   }
 }
 @media screen and (max-width: 390px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
   .navbar,
   .main {
     flex-wrap: wrap;
+  }
+  .nav-details {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .nav-btn {
+    display: flex;
+  }
+  .menu-icon {
+    display: flex;
   }
   .main {
     margin: 2rem;
   }
   .main > img {
     width: 300px;
+    margin: 2rem 0;
+  }
+  .nav-btn {
+    flex-direction: column-reverse;
   }
 }

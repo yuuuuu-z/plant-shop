@@ -1,5 +1,5 @@
-import { Globe } from "lucide-react";
-import React from "react";
+import { Globe, Menu } from "lucide-react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -26,6 +26,18 @@ const Navbar = () => {
   const changeLanguage = () => {
     alert("Change language ot torn kert te kom joj");
   };
+  const [isOpen, setIsOpen] = useState();
+  const showMenu = () => {
+    const navDetails = document.querySelector(".nav-details");
+    if (
+      navDetails.style.display === "none" ||
+      navDetails.style.display === ""
+    ) {
+      navDetails.style.display = "flex";
+    } else {
+      navDetails.style.display = "none";
+    }
+  };
   return (
     <>
       <nav className="navbar">
@@ -33,6 +45,9 @@ const Navbar = () => {
           src="https://cdn3d.iconscout.com/3d/premium/thumb/flower-plant-6624897-5522944.png?f=webp"
           alt=""
         />
+        <button onClick={showMenu} className="btn btn-success menu-icon">
+          <Menu size={"30px"} />
+        </button>
         <ul className="nav-details">
           {links.map((link) => (
             <li key={link.label}>
@@ -41,7 +56,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="nav-btn">
-          <Globe onClick={changeLanguage} />
+          <Globe size={"30px"} onClick={changeLanguage} />
           <button className="btn btn-success">Login</button>
         </div>
       </nav>

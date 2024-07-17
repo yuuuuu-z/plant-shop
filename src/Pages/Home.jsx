@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="main">
       <div className="main-details">
-        <p className="fs-1">
+        <p>
           We love helping you <br></br> to save the earth
         </p>
         <p>
