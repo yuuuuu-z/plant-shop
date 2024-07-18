@@ -1,33 +1,69 @@
 import { ArrowRight } from "lucide-react";
 import React from "react";
+import SomeSteps from "../components/SomeSteps";
 
 const Home = () => {
+  const steps = [
+    {
+      img: "https://cdn3d.iconscout.com/3d/premium/thumb/plant-5293900-4432198.png",
+      title: "Inoculate",
+      description: "Inoculate the soil with beneficial bacteria.",
+    },
+    {
+      img: "https://cdn3d.iconscout.com/3d/premium/thumb/plant-6347424-5242126.png?f=webp",
+      title: "Sowing Seeds",
+      description: "Plant the seeds in the prepared soil.",
+    },
+    {
+      img: "https://cdn3d.iconscout.com/3d/premium/thumb/plants-pot-8746036-7053814.png?f=webp",
+      title: "Punt the Pots",
+      description: "Place the pots in their designated spots.",
+    },
+  ];
   return (
-    <div className="main">
-      <div className="main-details">
-        <p>
-          We love helping you <br></br> to save the earth
-        </p>
-        <p>
-          We are a team of passionate people whose goal is to impove everyone's
-          through disruptive products <br></br> We build great products to solve
-          your business problems.
-        </p>
-        <div className="main-btn">
-          <button className="btn btn-success">Join Now</button>
-          <button className="btn btn-danger">
-            Learn More{" "}
-            <span>
-              <ArrowRight />
-            </span>
-          </button>
+    <div className="container">
+      <div className="main">
+        <div className="main-details">
+          <p>
+            We love helping you <br></br> to save the earth
+          </p>
+          <p>
+            We are a team of passionate people whose goal is to impove
+            everyone's through disruptive products <br></br> We build great
+            products to solve your business problems.
+          </p>
+          <div className="main-btn">
+            <button className="btn btn-success">Join Now</button>
+            <button className="btn btn-danger">
+              Learn More{" "}
+              <span>
+                <ArrowRight />
+              </span>
+            </button>
+          </div>
         </div>
+
+        <img
+          src="https://img.freepik.com/premium-photo/collection-3d-realistic-icon-illustration-potted-plants-interior_979495-104304.jpg"
+          alt=""
+        />
       </div>
 
-      <img
-        src="https://img.freepik.com/premium-photo/collection-3d-realistic-icon-illustration-potted-plants-interior_979495-104304.jpg"
-        alt=""
-      />
+      <div className="step">
+        <h1>
+          Steps to Start <span>Your Plan Off Right</span>
+        </h1>
+        <div className="more-step">
+          {steps.map((step, index) => (
+            <SomeSteps
+              key={index}
+              img={step.img}
+              title={step.title}
+              description={step.description}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
