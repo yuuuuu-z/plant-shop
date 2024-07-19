@@ -113,6 +113,32 @@ a:hover {
   color: var(--main-color);
   font-weight: bold;
 }
+.more-nav-btn {
+  display: none;
+  position: absolute;
+  margin-top: 0.5rem;
+  right: 0;
+  margin-right: 1rem;
+}
+.changeLan {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+  width: 250px;
+  background-color: rgb(247, 247, 247);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.more-lan {
+  display: flex;
+  gap: 1rem;
+}
+.flag > img {
+  width: 30px;
+}
 
 @keyframes zoom {
   0% {

@@ -1,6 +1,7 @@
 import { Globe, Menu } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import LanguageDropDown from "./LanguageDropDown";
 
 const Navbar = () => {
   const links = [
@@ -24,9 +25,13 @@ const Navbar = () => {
   ];
 
   const changeLanguage = () => {
-    alert("Change language ot torn kert te kom joj");
+    const navLan = document.querySelector(".more-nav-btn");
+    if (navLan.style.display === "none" || navLan.style.display === "") {
+      navLan.style.display = "flex";
+    } else {
+      navLan.style.display = "none";
+    }
   };
-  const [isOpen, setIsOpen] = useState();
   const showMenu = () => {
     const navDetails = document.querySelector(".nav-details");
     if (
@@ -60,6 +65,9 @@ const Navbar = () => {
           <button className="btn btn-success">Login</button>
         </div>
       </nav>
+      <div className="more-nav-btn">
+        <LanguageDropDown />
+      </div>
     </>
   );
 };
