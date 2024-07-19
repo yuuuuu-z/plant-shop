@@ -138,6 +138,13 @@ a:hover {
     width: 300px;
     margin: 2rem 1rem;
   }
+  .card-step {
+    width: 400px !important;
+  }
+  .more-step {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 390px) {
   .navbar {
@@ -172,5 +179,15 @@ a:hover {
   }
   .nav-btn {
     flex-direction: column-reverse;
+  }
+  .step > h1 {
+    padding: 0 2rem;
+  }
+  .card-step {
+    width: 200px !important;
+  }
+  .more-step {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
