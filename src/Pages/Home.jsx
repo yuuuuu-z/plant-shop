@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import React from "react";
 import SomeSteps from "../components/SomeSteps";
 
@@ -20,6 +20,7 @@ const Home = () => {
       description: "Place the pots in their designated spots.",
     },
   ];
+
   return (
     <div className="container">
       <div className="main">
@@ -62,6 +63,51 @@ const Home = () => {
               description={step.description}
             />
           ))}
+        </div>
+      </div>
+
+      <div className="step-description">
+        <div className="step-descriptipon-left">
+          <img
+            src="https://cgaxisimages.fra1.cdn.digitaloceanspaces.com/2019/03/cgaxis_models_111_25-00.jpg"
+            alt=""
+          />
+        </div>
+        <div className="step-descriptipon-right">
+          <h1>
+            Make Your <span>Garden Good Nutrition</span>{" "}
+          </h1>
+          <div className="step-descriptipon-right-2">
+            <p>
+              {" "}
+              <span>
+                <Check />
+              </span>{" "}
+              Improved plant growth and healthy. When you provide your garden
+              with good nutrition you are given your plants the nutrition they
+              need to grow strong and healthy. This can lead to impoved yields
+              better disease ande more vibrant colors and flaoves your produce.
+            </p>
+            <p>
+              {" "}
+              <span>
+                <Check />
+              </span>{" "}
+              Good nutrition can help impove the structure of your soil, which
+              can lead to better water retension and drainage. This can help
+              your plants grow better and can also help prevent erosoion and
+              other soil problems.
+            </p>
+            <p>
+              {" "}
+              <span>
+                <Check />
+              </span>{" "}
+              Improved soil fertility. Good nutrition can help improve the
+              fertility of your soil, which can lead to better yields and
+              healthier plants.
+            </p>
+          </div>
         </div>
       </div>
     </div>
