@@ -5,7 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 } */
-
+footer,
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --fontsize-large: 40px;
   --fontsize-medium: 30px;
@@ -20,7 +26,6 @@
   justify-content: space-between;
   padding: 0 1.5rem;
   margin-top: 5rem;
-  
 }
 .footer-left {
   display: flex;
@@ -38,7 +43,7 @@
   color: var(--main-color);
 }
 .footer-left > img {
-  width: 200px;
+  width: 250px;
   padding-left: 4rem;
 }
 .footer-right {
@@ -77,10 +82,12 @@ span > a {
 .footer-right-contact > span > a:hover {
   color: red;
 }
-footer > p {
+footer > article {
   display: flex;
   justify-content: center;
   color: white;
   background-color: green;
+  align-items: center;
   padding: 0.2rem 0;
+  gap: 0.5rem;
 }

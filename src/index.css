@@ -247,7 +247,9 @@ a:hover {
   .step,
   .step-description,
   .step-descriptipon-right,
-  .grow {
+  .grow,
+  .footer,
+  footer {
     flex-wrap: wrap;
   }
   .nav-details {
@@ -293,7 +295,8 @@ a:hover {
   .footer {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    /* gap: 2rem; */
   }
   .footer-left-des {
     padding: 0 1rem;
@@ -302,5 +305,10 @@ a:hover {
   .footer-left > img {
     padding: 0;
     margin: 0;
+  }
+  .footer-right {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
   }
 }

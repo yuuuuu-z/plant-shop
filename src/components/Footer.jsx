@@ -57,7 +57,9 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <p>Ⓒ 2024 All Rigths Reserved. Design by Tra</p>
+      <article>
+        Ⓒ 2024 All Rigths Reserved. Design by <span className="fs-4">Tra</span>
+      </article>{" "}
     </footer>
   );
 };
