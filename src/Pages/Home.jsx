@@ -110,6 +110,32 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="grow">
+        <div className="grow-left">
+          <p className="fs-1">
+            Come With Us <span>Grow Up Your Plant</span>
+          </p>
+          <p className="text-muted">
+            We are a team of passionate people whose goal it's to impove
+            everyone's through disruptive products. We build great products to
+            solve your business problems.
+          </p>
+
+          <button className="btn btn-success">
+            Discover More
+            <span>
+              <ArrowRight />
+            </span>{" "}
+          </button>
+        </div>
+        <div className="grow-right">
+          <img
+            src="https://a23d.co/cdn-cgi/imagedelivery/S4svCqSolndHzMne84t1OQ/A23DMOD033322A_Preview/productpage"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   );
 };

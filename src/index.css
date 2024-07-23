@@ -159,7 +159,8 @@ a:hover {
   padding-top: 5rem;
   gap: 3rem;
 }
-.step-descriptipon-right > h1 > span {
+.step-descriptipon-right > h1 > span,
+.grow-left > p > span {
   color: var(--main-color);
 }
 .step-descriptipon-right-2 > p > span {
@@ -190,14 +191,34 @@ a:hover {
   display: flex;
   gap: 0.5rem;
 }
-
+.grow {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+.grow-left {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+  padding: 3rem;
+}
+.grow-right > img {
+  width: 500px;
+  padding-left: 3rem;
+}
+.grow-left > button {
+  box-shadow: var(--box-shadow);
+}
 @media screen and (max-width: 1200px) {
   .navbar,
   .main,
   .step,
   .card-step,
   .step-description,
-  .step-descriptipon-right {
+  .step-descriptipon-right,
+  .footer {
     flex-wrap: wrap;
     padding: 0 1rem;
   }
@@ -225,7 +246,8 @@ a:hover {
   .card-step,
   .step,
   .step-description,
-  .step-descriptipon-right {
+  .step-descriptipon-right,
+  .grow {
     flex-wrap: wrap;
   }
   .nav-details {
@@ -261,5 +283,24 @@ a:hover {
   }
   .step-descriptipon-left > img {
     width: 300px;
+  }
+  .grow-right > img {
+    width: 300px;
+  }
+  .grow {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer-left-des {
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .footer-left > img {
+    padding: 0;
+    margin: 0;
   }
 }

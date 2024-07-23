@@ -1,0 +1,86 @@
+/* *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+:root {
+  --fontsize-large: 40px;
+  --fontsize-medium: 30px;
+  --fontsize-small: 20px;
+  --box-shadow: 0 0 10px 10px lightgray;
+  --main-color: rgb(109, 196, 109);
+}
+
+.footer {
+  display: flex;
+  background-color: rgb(247, 247, 247);
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  margin-top: 5rem;
+  
+}
+.footer-left {
+  display: flex;
+  padding: 2rem 0;
+}
+.footer-left-des {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40%;
+  /* background-color: red; */
+}
+.footer-left-des > p:first-child {
+  font-size: var(--fontsize-large);
+  color: var(--main-color);
+}
+.footer-left > img {
+  width: 200px;
+  padding-left: 4rem;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  padding: 1rem 2rem;
+}
+.footer-right-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: lightgray;
+  /* padding: 0 0.5rem; */
+  border-radius: 5px;
+}
+.footer-right-btn > input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 0.5rem;
+}
+.footer-right-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-right-contact,
+span > a {
+  gap: 1.5rem;
+  color: var(--main-color);
+}
+.footer-right-contact > span:hover {
+  color: red;
+}
+.footer-right-contact > span > a:hover {
+  color: red;
+}
+footer > p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: green;
+  padding: 0.2rem 0;
+}
