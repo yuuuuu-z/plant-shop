@@ -1,7 +1,21 @@
 import { Facebook, Instagram, Send, Twitter, Youtube } from "lucide-react";
 import "../Style/footer.css";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const Footer = () => {
+  const [emailValue, setEmailValue] = useState("");
+
+  const sendHandle = () => {
+    var footerBtn = document.querySelectorAll(".footer-right-btn");
+    if (emailValue === "") {
+      toast.error("Please enter your email");
+    } else {
+      toast.success("Check your mail inbox!");
+      setEmailValue("");
+    }
+  };
   return (
     <footer>
       <div className="footer">
@@ -26,9 +40,15 @@ export const Footer = () => {
             Let's keep in touch in order to keep in touch with us
           </p>
           <div className="footer-right-btn">
-            <input type="text" />
-            <span className="btn btn-success">
+            <input
+              type="email"
+              value={emailValue}
+              onChange={(e) => setEmailValue(e.target.value)}
+              placeholder="Enter your email"
+            />
+            <span onClick={sendHandle} className="btn btn-success">
               <Send />
+              <ToastContainer />
             </span>
           </div>
           <p className="fs-5"> Follow Us</p>
