@@ -1,4 +1,4 @@
-import { StepForward } from "lucide-react";
+import { CircleDollarSign, StepForward } from "lucide-react";
 import "../Style/about.css";
 import MissionCard from "../components/MissionCard";
 
@@ -77,6 +77,38 @@ const About = () => {
               description={missionCard.description}
             />
           ))}
+        </div>
+      </div>
+
+      <div className="about-main">
+        <div className="about-main-left">
+          <img
+            src="https://img.freepik.com/premium-vector/3d-group-team-with-check-mark-icon-vector-isolated-white-background-3d-team-teamwork-business-concept-cartoon-minimal-style-3d-teamwork-icon-vector-render-illustration_726846-5808.jpg"
+            alt=""
+          />
+        </div>
+        <div className="about-main-right">
+          <p className="fs-2">Our Team</p>
+          <p className="text-muted">
+            We are a team of passionate people whose goal is to impove
+            everyone's through disruptive products We build great products to
+            solve your business problems.We build great products to solve your
+            business problems.
+          </p>
+          <p className="text-success">
+            Please make sure to support us in order to join hands to make the
+            world better place.
+          </p>
+
+          <a href="https://pay.ababank.com/VV2SV55JoNfJAKT59" target="blank">
+            <button className="btn btn-success">
+              {" "}
+              Support Us{" "}
+              <span>
+                <CircleDollarSign />
+              </span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

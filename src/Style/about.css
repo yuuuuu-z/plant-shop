@@ -15,10 +15,12 @@
   /* justify-content: center; */
   flex-wrap: wrap;
   width: 70%;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
+
 .about-main-right > button {
   box-shadow: var(--box-shadow);
+  width: 30%;
 }
 .mission {
   display: flex;
