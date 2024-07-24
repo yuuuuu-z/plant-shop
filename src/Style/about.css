@@ -1,0 +1,46 @@
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+.about-main-left > img {
+  padding-left: 4rem;
+  width: 400px;
+}
+.about-main-right {
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  width: 70%;
+  /* flex-direction: column; */
+}
+.about-main-right > button {
+  box-shadow: var(--box-shadow);
+}
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+  margin: 5rem 0;
+}
+.mission-card {
+  display: flex;
+
+  margin: 3rem 0;
+  gap: 5rem;
+}
+.card-mission-title {
+  color: var(--main-color);
+}
+.card-mission-flex {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  /* background-color: red; */
+}

@@ -4,7 +4,8 @@
   --fontsize-large: 40px;
   --fontsize-medium: 30px;
   --fontsize-small: 20px;
-  --box-shadow: 0 0 10px 10px lightgray;
+  --box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
   --main-color: rgb(109, 196, 109);
 }
 
@@ -233,6 +234,97 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: column;
   }
+  .mission-card {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  .navbar,
+  .main,
+  .card-step,
+  .step,
+  .step-description,
+  .step-descriptipon-right,
+  .grow,
+  .footer,
+  footer {
+    flex-wrap: wrap;
+  }
+  .nav-details {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .nav-btn {
+    display: flex;
+  }
+  .menu-icon {
+    display: flex;
+  }
+  .main {
+    margin: 2rem;
+  }
+  .main > img {
+    width: 300px;
+    margin: 2rem 0;
+  }
+  .nav-btn {
+    flex-direction: column-reverse;
+  }
+  .step > h1 {
+    padding: 0 2rem;
+  }
+  .card-step {
+    width: 200px !important;
+  }
+  .more-step {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .step-descriptipon-left > img {
+    width: 300px;
+  }
+  .grow-right > img {
+    width: 300px;
+  }
+  .grow {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 2rem; */
+  }
+  .footer-left-des {
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .footer-left > img {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-right {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+  }
+  .about-main {
+    flex-direction: column;
+  }
+  .about-main-left > img {
+    width: 300px;
+    padding: 0;
+  }
+  .mission-card {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 390px) {
   .navbar {
@@ -310,5 +402,15 @@ a:hover {
     display: flex;
     /* background-color: red; */
     width: 100%;
+  }
+  .about-main {
+    flex-direction: column;
+  }
+  .about-main-left > img {
+    width: 300px;
+    padding: 0;
+  }
+  .mission-card {
+    flex-direction: column;
   }
 }

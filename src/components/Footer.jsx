@@ -18,6 +18,7 @@ export const Footer = () => {
   };
   return (
     <footer>
+      <ToastContainer />
       <div className="footer">
         <div className="footer-left">
           <img
@@ -48,7 +49,6 @@ export const Footer = () => {
             />
             <span onClick={sendHandle} className="btn btn-success">
               <Send />
-              <ToastContainer />
             </span>
           </div>
           <p className="fs-5"> Follow Us</p>
