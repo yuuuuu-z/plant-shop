@@ -31,7 +31,7 @@ const About = () => {
   const person3dCards = [
     {
       id: 1,
-      name: "Chuon Sopheaktra",
+      name: "Mr. Chuon Sopheaktra",
       img: "https://static.vecteezy.com/system/resources/previews/024/387/852/non_2x/3d-male-character-sitting-on-a-sofa-and-working-on-a-laptop-with-thinking-pose-free-png.png",
       position: "CEO, Founder",
       description:
