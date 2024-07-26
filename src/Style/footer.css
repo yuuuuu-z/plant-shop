@@ -79,10 +79,10 @@ span > a {
   color: var(--main-color);
 }
 .footer-right-contact > span:hover {
-  color: red;
+  color: dodgerblue;
 }
 .footer-right-contact > span > a:hover {
-  color: red;
+  color: dodgerblue;
 }
 footer > article {
   display: flex;

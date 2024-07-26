@@ -46,3 +46,40 @@
   font-weight: bold;
   /* background-color: red; */
 }
+.about-person {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.person-3d {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  padding-right: 2rem;
+}
+.person-3d-left > img {
+  width: 350px;
+}
+
+.person-3d-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--main-color);
+}
+.person-3d-contact > span:hover {
+  color: dodgerblue;
+}
+.person-3d-contact > span > a:hover {
+  color: dodgerblue;
+}
+.person-3d-right > h3 {
+  font-weight: bold;
+}
+.about-person {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 1rem;
+  gap: 1rem;
+  /* background-color: red; */
+}

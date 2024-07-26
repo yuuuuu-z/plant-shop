@@ -219,7 +219,8 @@ a:hover {
   .card-step,
   .step-description,
   .step-descriptipon-right,
-  .footer {
+  .footer,
+  .about-person {
     flex-wrap: wrap;
     padding: 0 1rem;
   }
@@ -235,6 +236,9 @@ a:hover {
     flex-direction: column;
   }
   .mission-card {
+    flex-direction: column;
+  }
+  .about-person {
     flex-direction: column;
   }
 }
@@ -253,7 +257,8 @@ a:hover {
   .step-descriptipon-right,
   .grow,
   .footer,
-  footer {
+  footer,
+  .about-person {
     flex-wrap: wrap;
   }
   .nav-details {
@@ -301,6 +306,9 @@ a:hover {
     align-items: center;
     justify-content: center;
     /* gap: 2rem; */
+  }
+  .about-person {
+    flex-direction: column;
   }
   .footer-left-des {
     padding: 0 1rem;
@@ -342,7 +350,8 @@ a:hover {
   .step-descriptipon-right,
   .grow,
   .footer,
-  footer {
+  footer,
+  .about-person {
     flex-wrap: wrap;
   }
   .nav-details {
@@ -414,5 +423,15 @@ a:hover {
   }
   .mission-card {
     flex-direction: column;
+  }
+  .about-person {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .person-3d {
+    flex-direction: column;
+  }
+  .person-3d-left > img {
+    width: 300px;
   }
 }

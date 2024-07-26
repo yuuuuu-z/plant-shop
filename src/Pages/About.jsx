@@ -1,6 +1,7 @@
 import { CircleDollarSign, StepForward } from "lucide-react";
 import "../Style/about.css";
 import MissionCard from "../components/MissionCard";
+import Person3D from "../components/Person3D";
 
 const About = () => {
   const missionCards = [
@@ -24,6 +25,25 @@ const About = () => {
       title: "Better Environment",
       description:
         "We help you to reduce stress by planting more trees and make your life more beautiful",
+    },
+  ];
+
+  const person3dCards = [
+    {
+      id: 1,
+      name: "Chuon Sopheaktra",
+      img: "https://static.vecteezy.com/system/resources/previews/024/387/852/non_2x/3d-male-character-sitting-on-a-sofa-and-working-on-a-laptop-with-thinking-pose-free-png.png",
+      position: "CEO, Founder",
+      description:
+        "I am passionate and plan to make the world better place and make it more beautiful.",
+    },
+    {
+      id: 2,
+      name: "Ms. Sozano Jona",
+      img: "https://cdn3d.iconscout.com/3d/premium/thumb/cute-girl-working-on-laptop-5601688-4709570.png?f=webp",
+      position: "Manager, Co-Founder",
+      description:
+        "I am the manager and I am proud to present our product to the world.",
     },
   ];
   return (
@@ -110,6 +130,18 @@ const About = () => {
             </button>
           </a>
         </div>
+      </div>
+
+      <div className="about-person">
+        {person3dCards.map((person3dCard, index) => (
+          <Person3D
+            key={index}
+            img={person3dCard.img}
+            name={person3dCard.name}
+            position={person3dCard.position}
+            description={person3dCard.description}
+          />
+        ))}
       </div>
     </div>
   );
