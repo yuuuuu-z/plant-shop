@@ -1,0 +1,10 @@
+.service-provice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.for-provice {
+  display: flex;
+  gap: 5rem;
+}

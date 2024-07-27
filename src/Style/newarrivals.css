@@ -1,0 +1,23 @@
+.arrival {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  background-color: #eeeeee;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.service-arrival {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 10rem 0;
+}
+.arrival-right > img {
+  width: 100px;
+}
+
+.arrival:hover {
+  background-color: var(--main-color);
+  transition: all 0.2s ease-in-out;
+}

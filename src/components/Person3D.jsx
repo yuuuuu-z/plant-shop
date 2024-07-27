@@ -10,7 +10,7 @@ const Person3D = ({ id, img, name, position, description }) => {
       <div className="person-3d-right">
         <h3>{name}</h3>
         <p
-          className="text-muted"
+          className="text-success"
           style={{ borderBottom: "solid", paddingBottom: "1rem" }}
         >
           {position}{" "}
