@@ -1,7 +1,13 @@
 import { ArrowRight, Check } from "lucide-react";
 import React from "react";
 import SomeSteps from "../components/SomeSteps";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init({
+  duration: 1000,
+  easing: "ease-in-out-expo",
+});
 const Home = () => {
   const steps = [
     {
@@ -25,15 +31,15 @@ const Home = () => {
     <div className="container">
       <div className="main">
         <div className="main-details">
-          <p>
+          <p data-aos="fade-up">
             We love helping you <br></br> to save the earth
           </p>
-          <p>
+          <p data-aos="fade-up">
             We are a team of passionate people whose goal is to impove
             everyone's through disruptive products <br></br> We build great
             products to solve your business problems.
           </p>
-          <div className="main-btn">
+          <div className="main-btn" data-aos="fade-down">
             <button className="btn btn-success">Join Now</button>
             <button className="btn btn-danger">
               Learn More{" "}
@@ -45,12 +51,13 @@ const Home = () => {
         </div>
 
         <img
+          data-aos="zoom-in"
           src="https://img.freepik.com/premium-photo/collection-3d-realistic-icon-illustration-potted-plants-interior_979495-104304.jpg"
           alt=""
         />
       </div>
 
-      <div className="step">
+      <div className="step" data-aos="zoom-in">
         <h1>
           Steps to Start <span>Your Plan Off Right</span>
         </h1>
@@ -66,7 +73,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="step-description">
+      <div className="step-description" data-aos="fade-down">
         <div className="step-descriptipon-left">
           <img
             src="https://cgaxisimages.fra1.cdn.digitaloceanspaces.com/2019/03/cgaxis_models_111_25-00.jpg"
@@ -111,7 +118,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="grow">
+      <div className="grow" data-aos="fade-down">
         <div className="grow-left">
           <p className="fs-1">
             Come With Us <span>Grow Up Your Plant</span>

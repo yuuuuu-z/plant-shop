@@ -52,7 +52,7 @@ const Service = () => {
 
   return (
     <div className="container">
-      <div className="grow">
+      <div className="grow" data-aos="fade-down">
         <div className="grow-left">
           <p className="fs-1">
             We Take Care Of Your <br />
@@ -71,14 +71,14 @@ const Service = () => {
             </span>{" "}
           </button>
         </div>
-        <div className="grow-right">
+        <div className="grow-right" data-aos="zoom-in">
           <img
             src="https://img-new.cgtrader.com/items/2634017/392cc61b1c/large/houseplants-in-a-white-pot-for-the-interior-721-3d-model-max-obj-fbx.jpg"
             alt=""
           />
         </div>
       </div>
-      <div className="service-arrival">
+      <div className="service-arrival" data-aos="zoom-in">
         {newArrivalCards.map((arrCard, index) => (
           <NewArrival
             key={index}
@@ -89,7 +89,7 @@ const Service = () => {
         ))}
       </div>
 
-      <div className="service-provice">
+      <div className="service-provice" data-aos="fade-down">
         <h1 className="text-success">Service We Provice</h1>
         <div className="for-provice">
           {serviceProviceCards.map((arrCard, index) => {

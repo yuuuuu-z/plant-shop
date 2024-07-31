@@ -48,7 +48,7 @@ const About = () => {
   ];
   return (
     <div>
-      <div className="about-main">
+      <div className="about-main" data-aos="fade-down">
         <div className="about-main-left">
           <img
             src="https://preview.free3d.com/img/2017/03/2272887024560113476/cevn9zga.jpg"
@@ -88,7 +88,7 @@ const About = () => {
           We are interested in the services provided to the community that are
           interested in the services provided to the community.
         </p>
-        <div className="mission-card">
+        <div className="mission-card" data-aos="zoom-in">
           {missionCards.map((missionCard, index) => (
             <MissionCard
               key={index}
@@ -100,7 +100,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-main">
+      <div className="about-main" data-aos="fade-down">
         <div className="about-main-left">
           <img
             src="https://img.freepik.com/premium-vector/3d-group-team-with-check-mark-icon-vector-isolated-white-background-3d-team-teamwork-business-concept-cartoon-minimal-style-3d-teamwork-icon-vector-render-illustration_726846-5808.jpg"
@@ -132,7 +132,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="about-person">
+      <div className="about-person" data-aos="zoom-in">
         {person3dCards.map((person3dCard, index) => (
           <Person3D
             key={index}
