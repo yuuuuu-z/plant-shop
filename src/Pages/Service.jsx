@@ -71,7 +71,7 @@ const Service = () => {
             </span>{" "}
           </button>
         </div>
-        <div className="grow-right" data-aos="zoom-in">
+        <div className="grow-right">
           <img
             src="https://img-new.cgtrader.com/items/2634017/392cc61b1c/large/houseplants-in-a-white-pot-for-the-interior-721-3d-model-max-obj-fbx.jpg"
             alt=""

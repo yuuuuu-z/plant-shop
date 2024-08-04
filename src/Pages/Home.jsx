@@ -51,7 +51,6 @@ const Home = () => {
         </div>
 
         <img
-          data-aos="zoom-in"
           src="https://img.freepik.com/premium-photo/collection-3d-realistic-icon-illustration-potted-plants-interior_979495-104304.jpg"
           alt=""
         />
